@@ -1,7 +1,7 @@
 "use strict";
-var maybeNumber = 5;
+let maybeNumber = 5;
 maybeNumber = "5";
-var doggo = {
+const doggo = {
     bark: "WOOF",
     purr: "Nya!",
 };

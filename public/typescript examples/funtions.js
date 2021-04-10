@@ -1,18 +1,18 @@
 "use strict";
-var myAddFuncion = function (a, b) {
+const myAddFuncion = (a, b) => {
     return a + b;
 };
-var multiply = function (a, b) {
+const multiply = (a, b) => {
     return a * b;
 };
-var position1 = { x: 10, y: 20 };
-var position2 = { x: 0, y: 30 };
-var addVectors = function (v1, v2) {
-    var v3 = { x: v1.x + v2.x, y: v1.y + v2.y };
+const position1 = { x: 10, y: 20 };
+const position2 = { x: 0, y: 30 };
+const addVectors = (v1, v2) => {
+    const v3 = { x: v1.x + v2.x, y: v1.y + v2.y };
     return v3;
 };
 function addListener(event, onEvent) {
-    setTimeout(function () {
+    setTimeout(() => {
         onEvent();
     }, 1000);
 }

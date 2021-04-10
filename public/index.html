@@ -5,10 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Typescript basics</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h2>Hello friends</h2>
-    <ul id="names"></ul>
+    <form class="form">
+      <div class="field">
+        <label for="friendName">Friend name:</label>
+        <input type="text" name="friendName" id="friendName" />
+      </div>
+      <div class="field">
+        <label for="friendType">Friend type:</label>
+        <select name="friendType" id="friendType">
+          <option selected value="0">Best friend</option>
+          <option value="1">Friend</option>
+          <option value="2">Known</option>
+        </select>
+      </div>
+      <input type="submit" value="Add friend" id="addFriend" />
+    </form>
+    <h2>Friends list</h2>
+    <ul id="friends"></ul>
   </body>
   <script src="sandbox.js"></script>
 </html>
